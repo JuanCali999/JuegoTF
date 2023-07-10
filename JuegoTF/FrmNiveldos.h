@@ -26,12 +26,12 @@ namespace JuegoTF {
 			space = BufferedGraphicsManager::Current;
 			buffer = space->Allocate(g, panel1->ClientRectangle);
 			//bitmap
-			bmpHero = gcnew Bitmap("gold.png");
-			bmpMap = gcnew Bitmap("mundo2.png");
-			bmpEnemy = gcnew Bitmap("enemigoGrande1.png");
-			bmpMoney = gcnew Bitmap("monedas.png");
-			bmpAlly = gcnew Bitmap("a.png");
-			bmpBullet = gcnew Bitmap("fuegoff.png");
+			bmpHero = gcnew Bitmap("sprites/gold.png");
+			bmpMap = gcnew Bitmap("sprites/mundo2.png");
+			bmpEnemy = gcnew Bitmap("sprites/enemigoGrande1.png");
+			bmpMoney = gcnew Bitmap("sprites/monedas.png");
+			bmpAlly = gcnew Bitmap("sprites/a.png");
+			bmpBullet = gcnew Bitmap("sprites/fuegoff.png");
 			//bmpCambio = gcnew Bitmap("personaje2.png");
 			spTheme2 = gcnew SoundPlayer("music.wav");
 			//control
