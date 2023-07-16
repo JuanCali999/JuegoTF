@@ -212,7 +212,7 @@ private: System::Void FrmNiveldos_KeyDown(System::Object^ sender, System::Window
 		break;
 	case Keys::S:controlN->getHero()->move(buffer->Graphics, 'S', controlN->getMap());
 		break;
-	case Keys::P: bmpHero = gcnew Bitmap("personajen2c.png");
+	case Keys::P: bmpHero = gcnew Bitmap("sprites/personajen2c.png");
 		controlN->getHero()->setDxHero(); controlN->getHero()->setDyHero(); controlN->decreasedxEnemy(); controlN->decreasedyEnemy();
 		controlN->getHero()->decreaseHp(); controlN->getHero()->decreaceCoinN2(); controlN->setAmountN2(); break;
 	case Keys::O: bmpHero = gcnew Bitmap("gold.png"); controlN->getHero()->setInitalidxdyhero(); controlN->setIncreacedxdyenemy(); controlN->setAmountN2I(); break;
@@ -231,7 +231,7 @@ private: System::Void tmrMoney_Tick(System::Object^ sender, System::EventArgs^ e
 	}
 }
 private: System::Void FrmNiveldos_Load(System::Object^ sender, System::EventArgs^ e) {
-	spTheme2->Play();
+	//spTheme2->Play();
 }
 };
 }
