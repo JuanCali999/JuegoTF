@@ -215,7 +215,7 @@ private: System::Void FrmNiveldos_KeyDown(System::Object^ sender, System::Window
 	case Keys::P: bmpHero = gcnew Bitmap("sprites/personajen2c.png");
 		controlN->getHero()->setDxHero(); controlN->getHero()->setDyHero(); controlN->decreasedxEnemy(); controlN->decreasedyEnemy();
 		controlN->getHero()->decreaseHp(); controlN->getHero()->decreaceCoinN2(); controlN->setAmountN2(); break;
-	case Keys::O: bmpHero = gcnew Bitmap("gold.png"); controlN->getHero()->setInitalidxdyhero(); controlN->setIncreacedxdyenemy(); controlN->setAmountN2I(); break;
+	case Keys::O: bmpHero = gcnew Bitmap("sprites/gold.png"); controlN->getHero()->setInitalidxdyhero(); controlN->setIncreacedxdyenemy(); controlN->setAmountN2I(); break;
 	case Keys::M: controlN->addAlly(bmpAlly); break;
 	case Keys::Escape: Close();
 	case Keys::Space: Bullets* b = new Bullets(controlN->getHero()->getX(), controlN->getHero()->getY(), bmpBullet->Width, bmpBullet->Height, controlN->getHero()->getDirection()); controlN->addBullet(b); break;
